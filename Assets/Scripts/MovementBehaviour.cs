@@ -4,8 +4,7 @@ namespace LocalMultiplayerGame
 {
 	public class MovementBehaviour : MonoBehaviour
 	{
-		[field: SerializeField]
-		public float Speed { get; } = 1f;
+		[SerializeField] private float speed = 1f;
 
 		private IInputHandler inputHandler;
 
@@ -17,7 +16,7 @@ namespace LocalMultiplayerGame
 
 		private void FixedUpdate()
 		{
-			Vector3 movement = inputHandler.InputVector * (Speed * Time.deltaTime);
+			Vector3 movement = inputHandler.InputVector * speed;
 			transform.position += movement;
 		}
 
