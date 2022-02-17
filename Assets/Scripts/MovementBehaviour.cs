@@ -2,29 +2,24 @@
 
 namespace LocalMultiplayerGame
 {
+	[RequireComponent(typeof(Rigidbody2D))]
 	public class MovementBehaviour : MonoBehaviour
 	{
-		public const float SpeedModifier = 0.1f;
-
 		[SerializeField] private float speed = 1f;
 
 		private IInputHandler inputHandler;
+		private new Rigidbody2D rigidbody;
 
 		private void Awake()
 		{
+			rigidbody = GetComponent<Rigidbody2D>();
 			inputHandler = GetComponent<IInputHandler>();
-			inputHandler.Pause += Pause;
 		}
 
 		private void FixedUpdate()
 		{
-			Vector3 movement = inputHandler.InputVector * (speed * SpeedModifier);
-			transform.position += movement;
-		}
-
-		private void Pause()
-		{
-			Debug.Log("C'est la pause");
+			Vector3 movement = inputHandler.InputVector * speed;
+			rigidbody.velocity = movement;
 		}
 	}
 }
