@@ -4,6 +4,8 @@ namespace LocalMultiplayerGame
 {
 	public class MovementBehaviour : MonoBehaviour
 	{
+		public const float SpeedModifier = 0.1f;
+
 		[SerializeField] private float speed = 1f;
 
 		private IInputHandler inputHandler;
@@ -16,7 +18,7 @@ namespace LocalMultiplayerGame
 
 		private void FixedUpdate()
 		{
-			Vector3 movement = inputHandler.InputVector * speed;
+			Vector3 movement = inputHandler.InputVector * (speed * SpeedModifier);
 			transform.position += movement;
 		}
 
