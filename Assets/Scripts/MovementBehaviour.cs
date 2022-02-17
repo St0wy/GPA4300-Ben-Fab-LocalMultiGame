@@ -8,18 +8,18 @@ namespace LocalMultiplayerGame
 		[SerializeField] private float speed = 1f;
 
 		private IInputHandler inputHandler;
-		private new Rigidbody2D rigidbody;
+		private Rigidbody2D rb;
 
 		private void Awake()
 		{
-			rigidbody = GetComponent<Rigidbody2D>();
+			rb = GetComponent<Rigidbody2D>();
 			inputHandler = GetComponent<IInputHandler>();
 		}
 
 		private void FixedUpdate()
 		{
 			Vector3 movement = inputHandler.InputVector * speed;
-			rigidbody.velocity = movement;
+			rb.velocity = movement;
 		}
 	}
 }
