@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 namespace LocalMultiplayerGame
 {
 	/// <summary>
-	/// Class that will send input reads from the device to the player reciever that has the same ID.
+	/// Class that will send input reads from the device to the <see cref="PlayerInputReciever"/> that has the same ID.
 	/// Used to have multiple players without having them spawn on the Scene.
 	/// This script should be the one instanciated by the PlayerInputManager.
 	/// </summary>
@@ -16,6 +16,8 @@ namespace LocalMultiplayerGame
 	{
 		private PlayerInput playerInput;
 		private PlayerInputReciever playerInputReciever;
+
+		public Transform PlayerPos => playerInputReciever.transform;
 
 		private void Awake()
 		{
@@ -28,10 +30,14 @@ namespace LocalMultiplayerGame
 			// Get the reciever that has the same player ID as the PlayerInput 
 			playerInputReciever = recievers.FirstOrDefault(i => i.PlayerIndex == playerInput.playerIndex);
 
+			// Check the number of recievers
 			if (recievers.Length < 1)
 			{
 				this.LogError($"Not enough players in the scene. (found {recievers.Length})");
 			}
+
+			// Set the camera of the player input
+			playerInput.camera = Camera.main;
 		}
 
 		[UsedImplicitly]

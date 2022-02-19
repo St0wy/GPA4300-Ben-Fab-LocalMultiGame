@@ -2,6 +2,9 @@
 
 namespace LocalMultiplayerGame
 {
+	/// <summary>
+	/// Recieves input from <see cref="PlayerInputSender"/>.
+	/// </summary>
 	public class PlayerInputReciever : MonoBehaviour, IInputHandler
 	{
 		public event IInputHandler.InputEventHandler Interact;
@@ -17,7 +20,7 @@ namespace LocalMultiplayerGame
 		{
 			Pause?.Invoke();
 		}
-		
+
 		public void TriggerInteract()
 		{
 			Interact?.Invoke();
