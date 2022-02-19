@@ -11,10 +11,5 @@ namespace LocalMultiplayerGame
 		{
 			transform.localPosition = playerPos.localPosition;
 		}
-
-		private void OnDrawGizmos()
-		{
-			// Gizmos.DrawSphere(transform.position, 1f);
-		}
 	}
 }
