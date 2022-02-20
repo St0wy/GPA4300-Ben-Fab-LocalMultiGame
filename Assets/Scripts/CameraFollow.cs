@@ -7,7 +7,7 @@ namespace LocalMultiplayerGame
 	{
 		[SerializeField] private Transform playerPos;
 
-		private void Start()
+		private void Update()
 		{
 			Vector3 position = playerPos.position;
 			position.z = -1f;
