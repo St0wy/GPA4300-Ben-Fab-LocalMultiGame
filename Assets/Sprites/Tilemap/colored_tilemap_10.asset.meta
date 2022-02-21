@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/Tilemap/colored_tilemap_10.asset.meta
 guid: 16e941688d936e84c84e53cde02263c8
+========
+guid: d6b2da08baa6d30418b946a8994f327e
+>>>>>>>> 4b4ef3db6bf567f3880c19e2d5ea316cd806248e:Assets/Sprites/Tilemap/colored_tilemap_100.asset.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000
