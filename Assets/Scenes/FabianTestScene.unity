@@ -21569,6 +21569,62 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 178677026}
     m_Modifications:
+    - target: {fileID: 7609330634989912200, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 7609330636965297634}
+    - target: {fileID: 7609330634989912200, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609330634989912200, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+      propertyPath: m_Colors.m_PressedColor.a
+      value: 0.50980395
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609330634989912200, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.a
+      value: 0.1254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609330634989912200, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609330634989912200, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609330634989912200, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609330634989912200, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.a
+      value: 0.1254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609330634989912200, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609330634989912200, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609330634989912200, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609330634989912200, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1906894899}
+    - target: {fileID: 7609330634989912200, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609330634989912200, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LocalMultiplayerGame.UI.GameOverBehaviour, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7609330635097298384, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
       propertyPath: m_Name
       value: GameOverScreen
@@ -21657,5 +21713,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7609330635642337525, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609330635642337525, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609330635642337525, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609330636088083864, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+--- !u!114 &7609330636965297634 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7609330634989912203, guid: 03ca2b1998b52df418ebf1be1fb793a1, type: 3}
+  m_PrefabInstance: {fileID: 7609330636965297633}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
