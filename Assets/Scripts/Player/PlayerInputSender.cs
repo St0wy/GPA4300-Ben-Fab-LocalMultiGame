@@ -1,10 +1,11 @@
 ﻿using System.Linq;
 using JetBrains.Annotations;
+using LocalMultiplayerGame.Utils;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-namespace LocalMultiplayerGame
+namespace LocalMultiplayerGame.Player
 {
     /// <summary>
     /// Class that will send input reads from the device to the <see cref="PlayerInputReceiver"/> that has the same ID.

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace LocalMultiplayerGame
+namespace LocalMultiplayerGame.Player
 {
 	/// <summary>
 	/// Receives input from <see cref="PlayerInputSender"/>.

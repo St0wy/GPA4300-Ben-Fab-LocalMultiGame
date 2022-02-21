@@ -1,8 +1,7 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace LocalMultiplayerGame
+namespace LocalMultiplayerGame.Player
 {
 	public class CameraSetter : MonoBehaviour
 	{

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace LocalMultiplayerGame
+namespace LocalMultiplayerGame.Player
 {
 	[RequireComponent(typeof(Rigidbody2D))]
 	public class MovementBehaviour : MonoBehaviour

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace LocalMultiplayerGame
+namespace LocalMultiplayerGame.Utils
 {
 	/// <summary>
 	/// Utility class for logging in Unity.

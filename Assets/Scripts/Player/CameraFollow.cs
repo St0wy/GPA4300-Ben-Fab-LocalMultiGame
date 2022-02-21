@@ -1,7 +1,6 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace LocalMultiplayerGame
+namespace LocalMultiplayerGame.Player
 {
 	public class CameraFollow : MonoBehaviour
 	{

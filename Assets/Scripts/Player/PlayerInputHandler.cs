@@ -2,7 +2,7 @@ using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace LocalMultiplayerGame
+namespace LocalMultiplayerGame.Player
 {
 	public class PlayerInputHandler : MonoBehaviour, IInputHandler
 	{
