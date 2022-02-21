@@ -19,7 +19,7 @@ namespace LocalMultiplayerGame.Player
         private PlayerInput playerInput;
         private PlayerInputReceiver playerInputReceiver;
 
-        public Transform PlayerPos => playerInputReceiver.transform;
+        // public Transform PlayerPos => playerInputReceiver.transform;
 
         private void Awake()
         {
@@ -30,20 +30,22 @@ namespace LocalMultiplayerGame.Player
             DontDestroyOnLoad(this);
 
             // Make is so we get the new receivers when a scene is loaded
-            SceneManager.sceneLoaded += (arg0, mode) => LoadInputReceiver();
+            SceneManager.sceneLoaded += (scene, mode) => LoadInputReceiver();
 
             LoadInputReceiver();
         }
 
         private void LoadInputReceiver()
         {
+            this.Log("Finding receivers...");
+
             // Find all the PlayerInputReceivers on the scene (they should be attached to the players)
             var receivers = FindObjectsOfType<PlayerInputReceiver>();
 
             // Get the receiver that has the same player ID as the PlayerInput 
             playerInputReceiver = receivers.FirstOrDefault(i => i.PlayerIndex == playerInput.playerIndex);
 
-            // Check the number of recievers
+            // Check the number of receivers
             if (receivers.Length < 1)
             {
                 this.LogError($"Not enough players in the scene. (found {receivers.Length})");

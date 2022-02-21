@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+﻿using LocalMultiplayerGame.UI;
+using UnityEngine;
 
 namespace LocalMultiplayerGame
 {
     public class LightHealthBehaviour : MonoBehaviour
     {
+        [SerializeField] private GameOverBehaviour gameOverBehaviour;
         [SerializeField] private float maxLightHealth = 1f;
 
         [Tooltip("The amount of health that is lost per seconds.")] [SerializeField]
@@ -30,6 +32,11 @@ namespace LocalMultiplayerGame
             {
                 LightHealth = MaxLightHealth;
             }
+
+            if (!(LightHealth <= 0)) return;
+
+            if (gameOverBehaviour != null)
+                gameOverBehaviour.TriggerGameOver();
         }
     }
 }
